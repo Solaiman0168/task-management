@@ -9,4 +9,8 @@ import App from './components/App';
 // const root = ReactDOM.createRoot(document.getElementById('app'));
 // root.render(<App />);
 
-ReactDOM.createRoot(document.getElementById('app')).render(<App />);
+ReactDOM.createRoot(document.getElementById('app')).render(
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>
+);
