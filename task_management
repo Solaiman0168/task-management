@@ -1,0 +1,7 @@
+npm install react@latest react-dom@latest
+
+npm install --save-dev @vitejs/plugin-react
+
+npm install 
+
+npm run dev
