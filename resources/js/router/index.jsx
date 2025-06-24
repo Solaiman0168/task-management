@@ -29,10 +29,10 @@ const Index = () => {
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/about" element={<AboutPage />} />
-                <Route path="/*" element={<NotFoundPage />} />
+                <Route path="*" element={<NotFoundPage />} />
             </Routes>
         </div>
     )
 }
 
-export default router;
+export default Index;

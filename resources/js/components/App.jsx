@@ -1,5 +1,5 @@
-import react from 'react';
-import Router from './router/index';
+import React from 'react';
+import Router from '../router/index';
 import { NavLink } from 'react-router-dom';
 
 const App = () => {
@@ -7,9 +7,14 @@ const App = () => {
         <div>
             <h1>Hello World!</h1>
             <nav>
-                <NavLink to="/">Home</NavLink>
-                <NavLink to="/about">About</NavLink>
+                <NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''}>
+                    Home
+                </NavLink>
+                <NavLink to="/about" className={({ isActive }) => isActive ? 'active' : ''}>
+                    About
+                </NavLink>
             </nav>
+            <Router />
         </div>
     )
 };
